@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Prediction Result{% endblock %}
+{% block content %}
+<h2>Prediction Results for {{ stock }}</h2>
+{% if error %}
+    <p>{{ error }}</p>
+{% else %}
+    <h3>Original Closing Prices</h3>
+    <img src="{{ original_plot }}" alt="Original Prices">
+
+    <h3>Original vs Predicted Test Data</h3>
+    <img src="{{ predicted_plot }}" alt="Predicted Prices">
+
+    <h3>Future Predictions</h3>
+    <img src="{{ future_plot }}" alt="Future Predictions">
+
+    <ul>
+        {% for i, val in enumerate(future_predictions) %}
+            <li>Day {{ i+1 }}: {{ "%.2f"|format(val) }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endblock %}
