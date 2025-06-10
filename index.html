@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Make Prediction{% endblock %}
+{% block content %}
+<h2>Crypto Price Predictor</h2>
+<form method="post">
+    <label>Enter Ticker Symbol (e.g., BTC-USD): <input type="text" name="stock" required></label><br>
+    <label>Days to Predict: <input type="number" name="no_of_days" min="1" max="30" required></label><br>
+    <button type="submit">Predict</button>
+</form>
+{% endblock %}
