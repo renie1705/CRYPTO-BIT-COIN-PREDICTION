@@ -1,0 +1,184 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3f, #0074D9);
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(0, 31, 63, 0.85);
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #7FDBFF;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #7FDBFF;
+    margin-top: 0;
+}
+
+h2 {
+    border-bottom: 2px solid #7FDBFF;
+    padding-bottom: 5px;
+}
+
+/* Forms */
+form {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #DDDDDD;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #004080;
+    color: white;
+    font-size: 1em;
+}
+
+input:focus {
+    outline: none;
+    background-color: #0059b3;
+}
+
+/* Buttons */
+button {
+    background-color: #39CCCC;
+    color: #001f3f;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #3D9970;
+}
+
+/* Alerts */
+.alert {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.alert.danger {
+    background-color: #FF4136;
+    color: white;
+}
+
+/* Image Plots */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Prediction List */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #f0f0f0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Table (if needed later) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    color: white;
+}
+
+/* Footer (optional) */
+footer {
+    text-align: center;
+    margin: 30px 0 10px;
+    color: #bbbbbb;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Additional Effects */
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover {
+    background-color: #0059b3;
+}
+
+input::placeholder {
+    color: #bbbbbb;
+}
+
+form:hover {
+    box-shadow: 0 0 12px rgba(127, 219, 255, 0.3);
+}
